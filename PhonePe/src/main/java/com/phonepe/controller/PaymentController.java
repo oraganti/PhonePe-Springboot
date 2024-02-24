@@ -22,7 +22,7 @@ public class PaymentController {
     public RedirectView pay() throws NoSuchAlgorithmException {
         return paymentService.initiatePayment();
     }
-
+//this is phonepe formparams
     @PostMapping("/paymentsuccess")
     public String paymentReturn(@RequestParam Map<String, String> formParams) throws NoSuchAlgorithmException {
     	System.out.println("msg  ---------------------"+formParams);
